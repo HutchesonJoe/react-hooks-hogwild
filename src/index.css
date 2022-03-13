@@ -78,6 +78,16 @@ ul {
   margin: auto;
 }
 
+.filterSortBar {
+  align-content: center;
+  display: block;
+  padding: 2%;
+  margin: 2%;
+}
+
+.filterButton {
+  margin: 2%;
+}
 
 .pigTile {
   display: inline;
@@ -89,6 +99,7 @@ ul {
   outline: #3B0B0B dotted thick;
   transition: 0.75s;
   opacity: 1;
+  max-width: 100%;
 }
 
 .minBackgroundSneak {
