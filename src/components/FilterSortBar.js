@@ -1,12 +1,12 @@
 import { getDefaultNormalizer } from "@testing-library/react";
-import React from "react";
+import React, {useState} from "react";
 
-function FilterSortBar({greasedOnly, nameSort, weightSort}){
+function FilterSortBar({greasedOnly, sortHogs, sortBy}){
   return (
     <div className="filterSortBar">
        <button id="sortGreased" onClick={greasedOnly} className="filterButton">Show Greased Only</button>
-       <button id="sortByName" onClick={nameSort} className="filterButton">Sort by Name</button>
-       <button id="sortByWeight" onClick={weightSort} className="filterButton">Sort by Weight</button>
+       <button id="sortByName" onClick={sortHogs} className="filterButton">Sort by {sortBy}</button>
+    
     </div>
    
   )
